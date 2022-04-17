@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { MenuIcon, XIcon } from '@heroicons/react/solid'
+import { MenuIcon, XIcon } from '@heroicons/react/solid';
 import logo from '../../../images/logo-accountant.png';
 
 const Header = () => {
     const [open, setOpen] = useState(false);
 
     return (
-        <div className='lg:sticky bg-indigo-900 py-3 lg:px-16 md:px-10 px-5 lg:flex justify-between items-center'>
+        <div className='lg:sticky bg-indigo-900 py-3 lg:px-16 md:px-10 px-5 lg:flex justify-between items-center shadow-lg'>
             <div>
                 <Link to='/'><img src={logo} alt="" className='w-28' /></Link>
             </div>
@@ -27,7 +27,7 @@ const Header = () => {
                     <li><Link to='/contact'>Contact Me</Link></li>
                     <li><Link to='/login'>Login</Link></li>
                 </ul>
-                <Link to='/checkout' className='py-2 px-6 bg-white text-indigo-900 rounded hover:bg-amber-500 hover:text-white inline-block'>Book an Appointment</Link>
+                <Link to='/appointment' className='py-2 px-6 bg-white text-indigo-900 rounded hover:bg-amber-500 hover:text-white inline-block'>Book an Appointment</Link>
             </div>
         </div >
     );
