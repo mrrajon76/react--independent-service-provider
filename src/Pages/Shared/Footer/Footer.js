@@ -37,7 +37,7 @@ const Footer = () => {
                             <li>Sunday - Thursday: 9Am to 5PM</li>
                             <li>Friday: CLOSE</li>
                         </ul>
-                        <Link to='/appointment' className='mt-3 py-2 px-6 bg-white text-indigo-900 rounded hover:bg-amber-500 hover:text-white inline-block'>Book Now</Link>
+                        <Link to='/checkout' className='mt-3 py-2 px-6 bg-white text-indigo-900 rounded hover:bg-amber-500 hover:text-white inline-block'>Book Now</Link>
                     </div>
                 </div>
 
