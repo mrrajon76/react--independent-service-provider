@@ -7,7 +7,7 @@ const Header = () => {
     const [open, setOpen] = useState(false);
 
     return (
-        <div className='lg:sticky bg-indigo-900 py-3 lg:px-16 md:px-10 px-5 lg:flex justify-between items-center shadow-lg'>
+        <div className='lg:sticky lg:top-0 bg-indigo-900 py-3 lg:px-16 md:px-10 px-5 lg:flex justify-between items-center shadow-lg'>
             <div>
                 <Link to='/'><img src={logo} alt="" className='w-28' /></Link>
             </div>
@@ -19,7 +19,7 @@ const Header = () => {
 
             </div >
 
-            <div className={`text-white lg:flex items-center lg:space-x-12 lg:space-y-0 space-y-7 absolute lg:static bg-indigo-900 lg:z-auto z-[-1] left-0 w-full lg:w-auto lg:px-0 lg:py-0 px-9 py-7 transition-all duration-500 ease-in ${open ? 'top-20 ' : 'top-[-490px]'}`}>
+            <div className={`text-white lg:flex items-center lg:space-x-12 lg:space-y-0 space-y-7 absolute lg:static bg-indigo-900 lg:z-auto z-20 left-0 w-full lg:w-auto lg:px-0 lg:py-0 px-9 py-7 transition-all duration-500 ease-in ${open ? 'top-20 ' : 'top-[-490px]'}`}>
                 <ul className='lg:flex items-center lg:space-x-12 lg:space-y-0 space-y-5'>
                     <li><Link to='/'>Home</Link></li>
                     <li><Link to='/services'>Services</Link></li>
