@@ -1,8 +1,8 @@
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
 import About from './Pages/About/About';
-import Appointment from './Pages/Appointment/Appointment';
 import Blogs from './Pages/Blogs/Blogs';
+import Checkout from './Pages/Checkout/Checkout';
 import Contact from './Pages/Contact/Contact';
 import Home from './Pages/Home/Home';
 import Login from './Pages/LoginRegister/Login/Login';
@@ -25,7 +25,7 @@ function App() {
         <Route path='/blogs' element={<Blogs></Blogs>}></Route>
         <Route path='/login' element={<Login></Login>}></Route>
         <Route path='/register' element={<Register></Register>}></Route>
-        <Route path='/checkout' element={<Appointment></Appointment>}></Route>
+        <Route path='/checkout' element={<Checkout></Checkout>}></Route>
         <Route path='*' element={<NotFound></NotFound>}></Route>
       </Routes>
       <Footer></Footer>
