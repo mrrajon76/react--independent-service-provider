@@ -1,0 +1,44 @@
+[
+    {
+      "id": "625d0ab5e7f672972819eb1d",
+      "image": "https://i.ibb.co/gDVxnT0/bookkeeping.jpg",
+      "name": "Bookkeeping",
+      "rate": 2450,
+      "desc": "I will help you keep all of your income and expense records in order to help keep your tax liability low when it comes to filing time. The profit/loss statement will also be given at end of the calendar year."
+    },
+    {
+        "id": "625d0ab5d641dc54403c54e5",
+        "image": "https://i.ibb.co/k6qXrNx/consult.jpg",
+        "name": "Business Consulting",
+        "rate": 3550,
+        "desc": "Growing businesses and startups need accurate advice. Consulting on financial strategy, payroll, determining budgets and sub-budgets, I have the expertise and industry data to guide you and your teams to make the right decisions for your company."
+    },
+    {
+      "id": "625d0ab5e40cb994788d8af4",
+      "image": "https://i.ibb.co/7WnPcrJ/tax-prep.jpg",
+      "name": "Tax Preparation",
+      "rate": 3000,
+      "desc": "Not all tax planning opportunities are readily apparent. By having us on your team, you are more likely to benefit from those opportunities in order to maximize tax breaks and minimize tax liabilities in a legal and efficient manner."
+    },
+    {
+      "id": "625d0ab57667072fcb54a02f",
+      "image": "https://i.ibb.co/VvdW0fn/tax-res.jpg",
+      "name": "Tax Resolution",
+      "rate": 2700,
+      "desc": "If you’ve received a notice from the IRS because you haven’t filed a return or have unpaid taxes, you’ll benefit from having Fast Tax and Accounting Solutions on your side. Even if you just want to prevent a potential audit, I provide these types of services."
+    },
+    {
+      "id": "625d0ab5a0e07c99810a2084",
+      "image": "https://i.ibb.co/MPv8PFz/itin.jpg",
+      "name": "ITIN",
+      "rate": 2600,
+      "desc": "If you need to file a federal tax return but are not eligible for a Social Security Number, you must obtain an Individual Taxpayer Identification Number (ITIN) from the IRS. Although it sounds simple, the ITIN process can be complex."
+    },
+    {
+        "id": "625d0ab5a0e07c99810a207h",
+        "image": "https://i.ibb.co/4dKCfTv/others-ac.jpg",
+        "name": "Other Accounting Services",
+        "rate": 1850,
+        "desc": "My accounting services offer individuals and companies tax preparation services, Quickbooks training, audit defense, and more. my experts are here to help with clear, actionable guidance to make your accounting problems painless."
+    }
+  ]
