@@ -1,4 +1,31 @@
-# Getting Started with Create React App
+# Getting Started with Accounting Service Provider app
+
+## Let's checkout the site first [Accounting Service Provider](https://accounting-service-provider.web.app/)
+
+## Some key Functionalities of this app
+
+This site is fully focused on an individual accounting service provider.
+
+- On homepage, there is a responsive navbar, a nice banner with relevant background image, title and some introductory texts, 3 service cards, speciality section and a responsive footer.
+- For services section, used a json file containing image, title, id, rate, description. On homepage there are 3 service cards but on Services page there are all the 6 service cards. For displaying these two things using a single component, used condition (props children).
+- For every services, there is a button to book appointment. This button goes to an appointment booking form page which is a protected route. You must login before booking an appointment.
+- For managing user registration & login, used google firebase email & password authentication, google and github sign-in authentication.
+- User will receive a verification email after signing up using email & password.
+- If an user forget password then can reset the password. But for this need to input the email first.
+- After login, the login menu will be replaced by sign out menu.
+- The whole site is device friendly.
+
+## Technologies usd for this app
+
+- React app
+- React router
+- React protected router
+- Tailwind CSS
+- HeroIcon
+- React Firebase hook
+- Firebase hosting
+- Toastify
+- Custom hooks to load services & speciality section data
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

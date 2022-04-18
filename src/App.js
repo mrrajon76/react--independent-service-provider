@@ -7,10 +7,12 @@ import Contact from './Pages/Contact/Contact';
 import Home from './Pages/Home/Home';
 import Login from './Pages/LoginRegister/Login/Login';
 import Register from './Pages/LoginRegister/Register/Register';
+import RequireAuth from './Pages/LoginRegister/RequireAuth/RequireAuth';
 import NotFound from './Pages/NotFound/NotFound';
 import Services from './Pages/Services/Services/Services';
 import Footer from './Pages/Shared/Footer/Footer';
 import Header from './Pages/Shared/Header/Header';
+import Loading from './Pages/Shared/Loading/Loading';
 
 function App() {
   return (
@@ -25,7 +27,12 @@ function App() {
         <Route path='/blogs' element={<Blogs></Blogs>}></Route>
         <Route path='/login' element={<Login></Login>}></Route>
         <Route path='/register' element={<Register></Register>}></Route>
-        <Route path='/checkout' element={<Checkout></Checkout>}></Route>
+        <Route path='/checkout' element={
+          <RequireAuth>
+            <Checkout></Checkout>
+          </RequireAuth>}>
+        </Route>
+        <Route path='/loading' element={<Loading></Loading>}></Route>
         <Route path='*' element={<NotFound></NotFound>}></Route>
       </Routes>
       <Footer></Footer>

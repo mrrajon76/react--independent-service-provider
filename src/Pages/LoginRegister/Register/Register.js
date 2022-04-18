@@ -2,8 +2,9 @@ import React from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import googleIcon from '../../../images/google.png';
 import githubIcon from '../../../images/github.png';
-import { useCreateUserWithEmailAndPassword, useSignInWithGithub, useSignInWithGoogle } from 'react-firebase-hooks/auth';
+import { useCreateUserWithEmailAndPassword, useSignInWithGithub, useSignInWithGoogle, useUpdateProfile } from 'react-firebase-hooks/auth';
 import auth from '../../../firebase.init';
+import Loading from '../../Shared/Loading/Loading';
 
 
 const Register = () => {
@@ -14,28 +15,31 @@ const Register = () => {
         user2,
         loading2,
         error2,
-    ] = useCreateUserWithEmailAndPassword(auth);
+    ] = useCreateUserWithEmailAndPassword(auth, { sendEmailVerification: true });
+    const [updateProfile, updating, error3] = useUpdateProfile(auth);
 
     const navigate = useNavigate();
     let errorMessage;
-    if (error || error1 || error2) {
-        errorMessage = <p className='text-red-500 text-center'>Error: {error?.message} {error1?.message} {error2?.message}</p>
+
+    if (error || error1 || error2 || error3) {
+        errorMessage = <p className='text-red-500 text-center'>Error: {error?.message} {error1?.message} {error2?.message} {error3?.message}</p>
     }
-    // if (loading) {
-    //     return <p>Loading...</p>;
-    // }
+    if (loading || loading1 || loading2 || updating) {
+        return <Loading></Loading>
+    }
     if (user || user1 || user2) {
         navigate('/');
     }
 
-    const handleRegister = event => {
+    const handleRegister = async (event) => {
         event.preventDefault();
         const name = event.target.name.value;
         const email = event.target.email.value;
         const password = event.target.pass.value;
 
-        createUserWithEmailAndPassword(email, password);
-        // console.log(name, email, password);
+        await createUserWithEmailAndPassword(email, password);
+        await updateProfile({ displayName: name });
+        alert(`Hi, Thank you for signing up. Please check your e-mail for the verification link...`);
     }
     return (
         <div className='lg:min-h-[67vh] lg:w-1/3 mx-5 md:mx-20 lg:mx-auto my-14 py-14 px-5 md:px-10 lg:py-7 lg:px-7 shadow-lg shadow-slate-400'>

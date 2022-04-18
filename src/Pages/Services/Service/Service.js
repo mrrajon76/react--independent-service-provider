@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const Service = ({ data }) => {
     return (
-        <div className='text-center shadow-xl shadow-slate-300 rounded'>
+        <div className='text-center shadow-xl shadow-slate-300 hover:shadow-slate-400 rounded'>
             <img src={data.image} alt="" />
             <div className='mt-3 px-5 pb-6 '>
                 <h3 className='text-2xl font-bold text-indigo-900'>{data.name}</h3>
