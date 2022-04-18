@@ -25,6 +25,7 @@ const Header = () => {
                     <li><Link to='/services'>Services</Link></li>
                     <li><Link to='/about'>About Me</Link></li>
                     <li><Link to='/contact'>Contact Me</Link></li>
+                    <li><Link to='/blogs'>Blogs</Link></li>
                     <li><Link to='/login'>Login</Link></li>
                 </ul>
                 <Link to='/appointment' className='py-2 px-6 bg-white text-indigo-900 rounded hover:bg-amber-500 hover:text-white inline-block'>Book an Appointment</Link>
