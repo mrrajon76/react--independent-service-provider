@@ -8,7 +8,7 @@ import tw from '../../../images/twitter.png';
 
 const Footer = () => {
     return (
-        <div className='bg-indigo-900 text-white pt-5 pb-5 px-5 md:px-16'>
+        <div className='bg-indigo-900 text-white pt-8 pb-6 px-5 md:px-16'>
             <div className='grid md:grid-cols-3 lg:grid-cols-4'>
                 <div className='col-auto md:col-span-3 lg:col-auto'>
                     <Link to='/'><img src={logo} alt="" className='w-28 block mx-auto lg:mx-0' /></Link>

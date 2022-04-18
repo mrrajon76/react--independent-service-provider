@@ -1,0 +1,42 @@
+[
+    {
+      "id": "453",
+      "image": "https://i.ibb.co/McGpYQ1/accuracy.png",
+      "name": "Accurate"
+    },
+    {
+        "id": "5423",
+        "image": "https://i.ibb.co/qWPsk1z/clock.png",
+        "name": "On-Time"
+    },
+    {
+      "id": "524",
+      "image": "https://i.ibb.co/HnzppWz/transparency.png",
+      "name": "Transparent"
+    },
+    {
+      "id": "7454",
+      "image": "https://i.ibb.co/1LXK00H/report.png",
+      "name": "Proper Reporting"
+    },
+    {
+      "id": "2343",
+      "image": "https://i.ibb.co/9vR61k5/like.png",
+      "name": "Responsive"
+    },
+    {
+        "id": "744",
+        "image": "https://i.ibb.co/Qcbzwsy/graph.png",
+        "name": "Scalable"
+    },
+    {
+        "id": "633",
+        "image": "https://i.ibb.co/2cBhZqT/piggy-bank.png",
+        "name": "Savings"
+    },
+    {
+        "id": "989",
+        "image": "https://i.ibb.co/S7BRbz2/smile.png",
+        "name": "Stress-Free"
+    }
+  ]

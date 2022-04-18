@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import Services from '../Services/Services/Services';
 import './Home.css';
+import WhyMe from './WhyMe/WhyMe';
 
 const Home = () => {
     return (
@@ -18,6 +19,10 @@ const Home = () => {
 
             <div>
                 <Services>3</Services>
+            </div>
+
+            <div>
+                <WhyMe></WhyMe>
             </div>
         </div>
     );
