@@ -11,9 +11,11 @@ const About = () => {
                 <div className='text-center md:text-left md:col-span-2 lg:pt-6 order-2 md:order-none'>
                     <h4 className='text-3xl font-light text-indigo-900 mb-3'>Hello, I'am</h4>
                     <h3 className='text-4xl lg:text-5xl text-indigo-900 font-extrabold'>Md. Rasheduzzaman Rajon</h3>
-                    <h5 className='text-2xl font-bold text-slate-500 mt-3'>Web Developer</h5>
-                    <p className='mt-4'>I am a Web Front-end  Developer. I am skilled in responsive website design. I am very much proficient in HTML5, CSS3(Bootstrap, Tailwind), JS(ES6). Nowadays I am trying to preparing myself as a React Expert.
-                        <br /><br />I have set a specific GOAL. I want to introduce myself as a MERN Stack developer. To achieve this GOAL, I have started a new journey with Programming Hero team. From here, I have already gathered sound knowledge of HTML5, CSS3, JS, ES6, React. Now I am walking towards the backend part using NodeJS, MongoDB & ExpressJS. Day by day I am adding new technologies to my skill stack. </p>
+                    <h5 className='text-2xl font-bold text-slate-500 mt-3'>Accountant</h5>
+                    <p className='mt-4'><b>‘RAJON-Your Accountant’</b> was born out of a passion to provide small to medium-sized business a financial solution that covers their needs from A to Z. I have over 8 years of experience in diverse tax applications & tax laws, in addition to financial business consulting for small to medium-sized business owners Nationwide.
+                        <br /><br />
+                        I started <b>‘RAJON-Your Accountant’</b> in 2019 when I was faced with the decision to either continue to work for other firms that stuck to traditional methods or to break free and bring accounting innovation to business owners who need something more by leveraging technology in order to provide remote accounting services to companies across the world while establishing a name for itself as being one of the most accurate and efficient new-aged accounting firms.
+                    </p>
                 </div>
                 <div className='md:order-none order-1'>
                     <img src={aboutImg} alt="" className='w-3/4 md:w-full lg:w-1/2 block mx-auto' />

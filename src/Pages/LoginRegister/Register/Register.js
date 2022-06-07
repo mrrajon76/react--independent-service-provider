@@ -28,6 +28,7 @@ const Register = () => {
         return <Loading></Loading>
     }
     if (user || user1 || user2) {
+        alert(`Hi, Thank you for signing up. Please check your e-mail for the verification link...`);
         navigate('/');
     }
 
@@ -39,7 +40,6 @@ const Register = () => {
 
         await createUserWithEmailAndPassword(email, password);
         await updateProfile({ displayName: name });
-        alert(`Hi, Thank you for signing up. Please check your e-mail for the verification link...`);
     }
     return (
         <div className='lg:min-h-[67vh] lg:w-1/3 mx-5 md:mx-20 lg:mx-auto my-14 py-14 px-5 md:px-10 lg:py-7 lg:px-7 shadow-lg shadow-slate-400'>

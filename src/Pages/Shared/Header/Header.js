@@ -34,7 +34,7 @@ const Header = () => {
                     <li><CustomLink to='/services'>Services</CustomLink></li>
                     <li><CustomLink to='/about'>About Me</CustomLink></li>
                     <li><CustomLink to='/contact'>Contact Me</CustomLink></li>
-                    <li><CustomLink to='/blogs'>Blogs</CustomLink></li>
+                    {/* <li><CustomLink to='/blogs'>Blogs</CustomLink></li> */}
                     <li>{
                         user ? <span className='cursor-pointer' onClick={handleSignOut}>Sign out</span> : <Link to='/login'>Login</Link>
                     }
